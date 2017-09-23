@@ -1,4 +1,4 @@
-package lv.akurss.lesson2;
+package lv.akurss.lesson2.lecture;
 
 public class Functions {
 

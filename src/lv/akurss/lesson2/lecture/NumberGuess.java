@@ -1,4 +1,4 @@
-package lv.akurss.lesson2;
+package lv.akurss.lesson2.lecture;
 
 import java.util.Random;
 import java.util.Scanner;
