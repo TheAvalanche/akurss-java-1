@@ -13,7 +13,7 @@ public class Main {
 
 		SuperClass subAsSuperClass = new SubClass();
 		System.out.println(subAsSuperClass.field1);
-		System.out.println(subAsSuperClass.field2);		
+		System.out.println(subAsSuperClass.field2);
 		
 	}
 }
