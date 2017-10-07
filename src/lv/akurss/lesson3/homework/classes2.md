@@ -9,7 +9,7 @@
    3. Main - класс для запуска программы и для считывания ввода из консоли
 3. Реализуем класс Expense, чтоб в нем можно было хранить данные о каждом расходе - два поля amount и category. Оформляем по принципу Java Bean (конструктор, сеттер и геттер для каждого поля)
 4. В классе ExpenseCalculator создаем поле totalAmount
-5. В классе ExpenseCalculator создаем метод addToExpenses с аргументом Expense, и чтоб при получении Expense этот метод увеличивал поле totalAmount на то значение, что прошло в Expence
+5. В классе ExpenseCalculator создаем метод addToExpenses с аргументом Expense, и чтоб при получении Expense этот метод увеличивал поле totalAmount на то значение, что пришло в Expence
 6. В классе ExpenseCalculator создаем метод printTotal который бы распечатывал в консоль значение поля totalAmount
 7. В классе Main в методе main создаем новый объект ExpenseCalculator
 8. В классе Main в бесконечном цикле считываем число из консоли
