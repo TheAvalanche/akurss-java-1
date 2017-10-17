@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("ButtonDemo");
 		
-		Screen screen = new Screen();
+		JPanel screen = new JPanel();
 		
 		JButton b1 = new JButton("Click me!");
 		b1.addActionListener(new PrintOnClickActionListener());
