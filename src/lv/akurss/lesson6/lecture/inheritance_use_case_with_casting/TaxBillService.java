@@ -1,4 +1,4 @@
-package lv.akurss.lesson5.lecture.inheritance_use_case_with_casting;
+package lv.akurss.lesson6.lecture.inheritance_use_case_with_casting;
 
 public class TaxBillService implements BillService {
 

@@ -1,4 +1,4 @@
-package lv.akurss.lesson5.lecture.static_use_case;
+package lv.akurss.lesson6.lecture.static_use_case;
 
 public class CalcUtils {
 	

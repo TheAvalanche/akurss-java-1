@@ -1,4 +1,4 @@
-package lv.akurss.lesson5.lecture.casting_use_case;
+package lv.akurss.lesson6.lecture.casting_use_case;
 
 public class Car extends Transport {
 	

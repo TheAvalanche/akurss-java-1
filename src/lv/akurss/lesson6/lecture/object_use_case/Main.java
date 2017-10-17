@@ -1,12 +1,12 @@
-package lv.akurss.lesson5.lecture.object_use_case;
+package lv.akurss.lesson6.lecture.object_use_case;
 
-public class MainExt {
+public class Main {
 
 	public static void main(String[] args) {
-		CarExt car1 = new CarExt("Volvo", 240);
-		CarExt car2 = new CarExt("Volvo", 240);
+		Car car1 = new Car("Volvo", 240);
+		Car car2 = new Car("Volvo", 240);
 
-		System.out.println(car1 instanceof CarExt);
+		System.out.println(car1 instanceof Car);
 		System.out.println(car1 instanceof Object);
 		System.out.println(car1.equals(car1));
 		System.out.println(car1.equals(car2));

@@ -1,4 +1,4 @@
-package lv.akurss.lesson5.lecture.object_use_case;
+package lv.akurss.lesson6.lecture.object_use_case;
 
 public class CarExt {
 	private String name;
