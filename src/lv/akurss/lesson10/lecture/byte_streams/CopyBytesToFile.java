@@ -1,9 +1,6 @@
 package lv.akurss.lesson10.lecture.byte_streams;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 public class CopyBytesToFile {
 
@@ -12,8 +9,8 @@ public class CopyBytesToFile {
 		File input = new File("src/lv/akurss/lesson10/lecture/byte_streams/test.txt");
 		File output = new File("src/lv/akurss/lesson10/lecture/byte_streams/test2.txt");
 
-		try (FileInputStream fileInputStream = new FileInputStream(input);
-			 FileOutputStream fileOutputStream = new FileOutputStream(output)){
+		try (InputStream fileInputStream = new FileInputStream(input);
+			 OutputStream fileOutputStream = new FileOutputStream(output)){
 
 			int symbol;
 			while ((symbol = fileInputStream.read()) != -1) {

@@ -3,6 +3,7 @@ package lv.akurss.lesson10.lecture.byte_streams;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class ReadBytesFromFile {
 
@@ -10,7 +11,7 @@ public class ReadBytesFromFile {
 		
 		File input = new File("src/lv/akurss/lesson10/lecture/byte_streams/test.txt");
 		
-		try (FileInputStream fileInputStream = new FileInputStream(input)){
+		try (InputStream fileInputStream = new FileInputStream(input)){
 
 			int symbol;
 			while ((symbol = fileInputStream.read()) != -1) {

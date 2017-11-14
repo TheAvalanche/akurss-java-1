@@ -3,6 +3,7 @@ package lv.akurss.lesson10.lecture.byte_streams;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 
 public class WriteBytesToFile {
 
@@ -13,7 +14,7 @@ public class WriteBytesToFile {
 
 		File output = new File("src/lv/akurss/lesson10/lecture/byte_streams/test.txt");
 		
-		try (FileOutputStream fileOutputStream = new FileOutputStream(output)){
+		try (OutputStream fileOutputStream = new FileOutputStream(output)){
 			
 			for (byte eachByte : bytes) {
 				fileOutputStream.write(eachByte);

@@ -3,13 +3,14 @@ package lv.akurss.lesson10.lecture.closing_streams;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 
 public class OldCloseExample {
 
 	public static void main(String[] args) {
 		
 		File file = new File("src/lv/akurss/lesson10/lecture/closing_streams/test.txt");
-		FileOutputStream fileOutputStream = null;
+		OutputStream fileOutputStream = null;
 		
 		try {
 			fileOutputStream = new FileOutputStream(file);
