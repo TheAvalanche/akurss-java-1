@@ -1,6 +1,6 @@
 package lv.akurss.lesson11.lecture.wrappers;
 
-public class NumberExample {
+public class WrapperExample {
 
 	public static void main(String[] args) {
 		int a = Integer.parseInt("20");
