@@ -7,6 +7,9 @@ import java.util.Scanner;
 
 public class MultiThreadChatClient {
 
+	/*
+	* Переменная для хранения статуса клиента между потоками
+	*/
 	private static boolean closed = false;
 
 	public static void main(String[] args) {
@@ -18,7 +21,14 @@ public class MultiThreadChatClient {
 		) {
 
 			System.out.println("The client started. Type any text. To quit it type 'Ok'.");
+			/*
+			* Запускаем параллельный поток для чтения всех сообщений от сервера.
+			*/
 			new Thread(new MyRunnable(reader)).start();
+			
+			/*
+			* Отправляем сообщения не сервер, пока поток еще не закрыт.
+			*/
 			while (!closed) {
 				writer.println(scanner.nextLine());
 			}
@@ -41,6 +51,9 @@ public class MultiThreadChatClient {
 		public void run() {
 			String responseLine;
 			try {
+				/*
+				* Читаем все сообщения с сервера. Если сообщение содержит *** Bye - прекращаем чтение.
+				*/
 				while ((responseLine = reader.readLine()) != null) {
 					System.out.println(responseLine);
 					if (responseLine.contains("*** Bye")) {
