@@ -58,7 +58,6 @@ public class SynchronizedProblemExample {
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				System.out.println("Adding 10");
 				storage.setSum(storage.getSum() + 10);
 			}
 		}
@@ -80,7 +79,6 @@ public class SynchronizedProblemExample {
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				System.out.println("Subtracting 10");
 				storage.setSum(storage.getSum() - 10);
 			}
 		}

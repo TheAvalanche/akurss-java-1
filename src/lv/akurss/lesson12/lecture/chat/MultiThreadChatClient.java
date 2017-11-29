@@ -18,20 +18,7 @@ public class MultiThreadChatClient {
 		) {
 
 			System.out.println("The client started. Type any text. To quit it type 'Ok'.");
-			new Thread(() -> {
-				String responseLine;
-				try {
-					while ((responseLine = reader.readLine()) != null) {
-						System.out.println(responseLine);
-						if (responseLine.contains("*** Bye")) {
-							break;
-						}
-					}
-					closed = true;
-				} catch (IOException e) {
-					System.err.println("IOException:  " + e);
-				}
-			}).start();
+			new Thread(new MyRunnable(reader)).start();
 			while (!closed) {
 				writer.println(scanner.nextLine());
 			}
@@ -40,6 +27,30 @@ public class MultiThreadChatClient {
 			System.err.println("Don't know about host");
 		} catch (IOException e) {
 			System.err.println("Couldn't get I/O for the connection to host");
+		}
+	}
+
+	private static class MyRunnable implements Runnable {
+		private final BufferedReader reader;
+
+		public MyRunnable(BufferedReader reader) {
+			this.reader = reader;
+		}
+
+		@Override
+		public void run() {
+			String responseLine;
+			try {
+				while ((responseLine = reader.readLine()) != null) {
+					System.out.println(responseLine);
+					if (responseLine.contains("*** Bye")) {
+						break;
+					}
+				}
+				closed = true;
+			} catch (IOException e) {
+				System.err.println("IOException:  " + e);
+			}
 		}
 	}
 }
