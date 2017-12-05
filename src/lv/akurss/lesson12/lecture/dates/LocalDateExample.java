@@ -1,6 +1,7 @@
 package lv.akurss.lesson12.lecture.dates;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class LocalDateExample {
 
@@ -11,14 +12,14 @@ public class LocalDateExample {
 		System.out.println(date.getMonth());
 		System.out.println(date.getYear());
 		
-		date = date.plusMonths(1);
-		date = date.minusDays(1);
+		LocalDate newDate = date.plusMonths(1);
+		newDate = newDate.minusDays(1);
 
-		System.out.println(date);
+		System.out.println(newDate);
+
+		LocalDateTime time = LocalDateTime.now();
+		System.out.println(time);
 		
-		date = date.plusDays(40);
-
-		System.out.println(date);
 	}
 	
 }
