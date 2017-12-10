@@ -15,10 +15,6 @@ public class CalendarExample {
 		calendar.add(Calendar.DATE, -1);
 
 		System.out.println(calendar.getTime());
-		
-		calendar.add(Calendar.DATE, 40);
-
-		System.out.println(calendar.getTime());
 	}
 	
 }

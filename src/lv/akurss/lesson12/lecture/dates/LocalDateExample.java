@@ -8,6 +8,7 @@ public class LocalDateExample {
 	public static void main(String[] args) {
 		LocalDate date = LocalDate.now();
 		System.out.println(date);
+
 		System.out.println(date.getDayOfMonth());
 		System.out.println(date.getMonth());
 		System.out.println(date.getYear());
