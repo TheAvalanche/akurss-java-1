@@ -1,17 +1,15 @@
 package lv.akurss.lesson14.lecture.refactoring.model;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 public class Expense {
-	
-	private LocalDateTime created = LocalDateTime.now();
 	private BigDecimal amount;
-	private Category category;
 	private String description;
+	private Category category;
 
 	public Expense(BigDecimal amount, Category category) {
 		this.amount = amount;
+		this.description = description;
 		this.category = category;
 	}
 
@@ -45,22 +43,12 @@ public class Expense {
 		this.category = category;
 	}
 
-	public LocalDateTime getCreated() {
-		return created;
-	}
-
-	public void setCreated(LocalDateTime created) {
-		this.created = created;
-	}
-
 	@Override
 	public String toString() {
 		return "Expense{" +
 				"amount=" + amount +
 				", description='" + description + '\'' +
 				", category=" + category +
-				", created=" + created +
 				'}';
 	}
-	
 }

@@ -1,9 +1,10 @@
-package lv.akurss.lesson14.lecture.refactoring.validator;
+package lv.akurss.lesson14.lecture.refactoring.validators;
 
 import java.util.List;
 
-public class ExpenseStringValidator {
-
+public class ExpenseStringValidator implements Validator<String> {
+	
+	@Override
 	public void validate(String str, List<String> errors) {
 		String[] parts = str.split(":");
 
@@ -16,5 +17,7 @@ public class ExpenseStringValidator {
 		
 		new ExpenseAmountValidator().validate(parts[0], errors);
 		new ExpenseCategoryValidator().validate(parts[1], errors);
+		
 	}
+	
 }

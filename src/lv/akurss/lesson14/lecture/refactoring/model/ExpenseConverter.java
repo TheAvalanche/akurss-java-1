@@ -7,8 +7,8 @@ import java.util.stream.Stream;
 
 public class ExpenseConverter {
 	
-	public static Expense fromString(String str) {
-		String[] parts = str.split(":");
+	public static Expense fromString(String string) {
+		String[] parts = string.split(":");
 		if (parts.length == 2) {
 			return new Expense(new BigDecimal(parts[0]), Category.valueOf(parts[1]));
 		} else {
@@ -22,6 +22,7 @@ public class ExpenseConverter {
 				.filter(Objects::nonNull)
 				.map(Object::toString)
 				.collect(Collectors.joining(":"));
+		
 	}
 	
 }

@@ -1,29 +1,28 @@
-package lv.akurss.lesson14.lecture.refactoring.commands;
-
+package lv.akurss.lesson14.lecture.refactoring.command;
 
 import lv.akurss.lesson14.lecture.refactoring.model.ExpenseConverter;
 import lv.akurss.lesson14.lecture.refactoring.model.Expense;
 
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+import static lv.akurss.lesson14.lecture.refactoring.Main.STORE_PATH;
+
 public class LoadFromFileCommand implements Command {
 	
 	private List<Expense> expenses;
-	
+
 	public LoadFromFileCommand(List<Expense> expenses) {
 		this.expenses = expenses;
-	} 
+	}
 	
 	@Override
-	public void execute() throws IOException {
-		Path path = Paths.get("./expenses.txt");
+	public void execute(String commandStr) throws Exception {
+		Path path = Paths.get(STORE_PATH);
 		if (Files.exists(path)) {
 			Files.lines(path).forEach(line -> expenses.add(ExpenseConverter.fromString(line)));
 		}
 	}
-	
 }
