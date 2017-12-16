@@ -1,8 +1,8 @@
-package lv.akurss.lesson14.lecture.refactoring;
+package lv.akurss.lesson15.lecture.refactoring;
 
 
-import lv.akurss.lesson14.lecture.refactoring.command.*;
-import lv.akurss.lesson14.lecture.refactoring.model.Expense;
+import lv.akurss.lesson15.lecture.refactoring.command.*;
+import lv.akurss.lesson15.lecture.refactoring.model.Expense;
 
 import java.util.*;
 
@@ -28,10 +28,9 @@ public class Main {
 				System.out.println("See you later!");
 				break;
 			}
-
-			String key = commandStr.split(" ")[0];
-			if (commands.containsKey(key)) {
-				commands.get(key).execute(commandStr);
+			
+			if (commands.containsKey(commandStr.split(" ", 2)[0])) {
+				commands.get(commandStr).execute(commandStr);
 			} else {
 				new CreateExpenseCommand(expenses).execute(commandStr);
 			}
