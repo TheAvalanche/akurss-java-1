@@ -1,0 +1,74 @@
+# Задания на функции
+
+1. Добавьте в следующую программу функцию cube (аналогичную функции square), которая будет возвращать число (аргумент функции) в третьей степени.
+   ```java
+    package lv.akurss.lesson2.lecture;
+    
+    public class Main {
+        public static void main(String[] args) {
+            int a = square(2);
+            int b = cube(2);
+            System.out.println(a); //4
+            System.out.println(b); //8
+        }
+        
+        static int square(int x) {
+            return x * x;
+        }
+        
+        //insert your code here
+    }
+   ```
+2. Заполните ___ в следубщем коде
+   ```java
+    package lv.akurss.lesson2.lecture;
+    
+    public class Main {
+        public static void main(String[] args) {
+            print("Some text");
+            print("Some text 2");
+        }
+        
+        static ___ print(___ x) {
+            System.out.println(x);
+        }
+    }
+   ```
+3. Допишите 4 новых функции (add, subtract, multiply, divide) в следующем коде
+   ```java
+    package lv.akurss.lesson2.lecture;
+    
+    public class Main {
+        public static void main(String[] args) {
+            int a = sum(2, 3);
+            System.out.println(a); //5
+            int b = subtrack(8, 5);
+            System.out.println(b); //3
+            int c = divide(4, 2);
+            System.out.println(c); //2
+            int d = multiply(2, 3);
+            System.out.println(d); //6
+        }
+        
+        //insert 4 new functions
+    }
+   ```
+4. Допишите 4 новых функции (add, subtract, multiply, divide) в следующем коде
+   ```java
+    package lv.akurss.lesson2.lecture;
+    
+    public class Main {
+        public static void main(String[] args) {
+            double a = sum(2.5, 0.2);
+            System.out.println(a); //2.7
+            double b = subtrack(5.4, 2.7);
+            System.out.println(b); //2.7
+            double c = divide(9.3, 3.1);
+            System.out.println(c); //3.0
+            double d = multiply(1.2, 2.0);
+            System.out.println(d); //2.4
+        }
+    
+        //insert 4 new functions
+    }
+   ```
