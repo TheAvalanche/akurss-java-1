@@ -28,9 +28,10 @@ public class Main {
 				System.out.println("See you later!");
 				break;
 			}
-			
-			if (commands.containsKey(commandStr.split(" ", 2)[0])) {
-				commands.get(commandStr).execute(commandStr);
+
+			String key = commandStr.split(" ")[0];
+			if (commands.containsKey(key)) {
+				commands.get(key).execute(commandStr);
 			} else {
 				new CreateExpenseCommand(expenses).execute(commandStr);
 			}

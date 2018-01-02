@@ -8,7 +8,7 @@ public class ExpenseAmountValidator implements Validator<String> {
 	public void validate(String str, List<String> errors) {
 		try {
 			Double.parseDouble(str);
-		} catch (NumberFormatException e) {
+		} catch (NumberFormatException | NullPointerException e) {
 			errors.add("Invalid input. Cannot parse amount. Should be decimal number.");
 		}
 

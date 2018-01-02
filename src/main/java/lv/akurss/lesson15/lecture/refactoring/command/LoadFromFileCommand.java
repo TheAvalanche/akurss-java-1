@@ -8,7 +8,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-import static lv.akurss.lesson14.lecture.refactoring.Main.STORE_PATH;
+import static lv.akurss.lesson15.lecture.refactoring.Main.STORE_PATH;
 
 public class LoadFromFileCommand implements Command {
 	
