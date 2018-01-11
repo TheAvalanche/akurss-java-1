@@ -19,6 +19,9 @@ public class Main {
 		
 		Map<String, Command> commands = new HashMap<>();
 		commands.put("history", new PrintHistoryCommand(expenses));
+		commands.put("max", new FindMaxCommand(expenses));
+		commands.put("min", new FindMinCommand(expenses));
+		commands.put("category", new FindByCategoryCommand(expenses));
 		
 		new LoadFromFileCommand(expenses).execute("");
 		
