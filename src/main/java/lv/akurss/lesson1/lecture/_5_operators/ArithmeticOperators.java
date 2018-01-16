@@ -1,4 +1,4 @@
-package lv.akurss.lesson2.lecture;
+package lv.akurss.lesson1.lecture._5_operators;
 
 public class ArithmeticOperators {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package lv.akurss.lesson1.lecture.variables;
+package lv.akurss.lesson1.lecture._2_variables;
 
 public class Main {
 	public static void main(String[] args) {

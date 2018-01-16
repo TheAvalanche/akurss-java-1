@@ -1,6 +1,6 @@
-package lv.akurss.lesson2.lecture;
+package lv.akurss.lesson1.lecture._6_functions;
 
-public class Functions2 {
+public class Functions {
 
 	public static void main(String[] args) {
 		int sum = add(2, 5);
@@ -10,7 +10,6 @@ public class Functions2 {
 	}
 	
 	static int add(int left, int right) {
-		int addition = left + right;
-		return addition;
+		return left + right;
 	}
 }

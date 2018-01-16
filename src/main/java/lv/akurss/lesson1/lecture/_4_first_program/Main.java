@@ -1,4 +1,4 @@
-package lv.akurss.lesson1.lecture.satellite;
+package lv.akurss.lesson1.lecture._4_first_program;
 
 public class Main {
 	public static void main(String[] args) {

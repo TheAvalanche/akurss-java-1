@@ -1,4 +1,4 @@
-package lv.akurss.lesson1.lecture.types;
+package lv.akurss.lesson1.lecture._3_data_types;
 
 public class FloatError {
 	public static void main(String[] args) {

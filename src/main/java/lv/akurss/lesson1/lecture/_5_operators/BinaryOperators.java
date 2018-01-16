@@ -1,4 +1,4 @@
-package lv.akurss.lesson2.lecture;
+package lv.akurss.lesson1.lecture._5_operators;
 
 import static java.lang.Integer.toBinaryString;
 
