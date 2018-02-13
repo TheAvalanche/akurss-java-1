@@ -1,4 +1,4 @@
-package lv.akurss.lesson8.lecture.homework_answers;
+package lv.akurss.lesson5.homework_answers._2;
 
 import java.math.BigDecimal;
 

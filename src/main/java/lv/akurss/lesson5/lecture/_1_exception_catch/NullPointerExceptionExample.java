@@ -1,4 +1,4 @@
-package lv.akurss.lesson7.lecture.exception;
+package lv.akurss.lesson5.lecture._1_exception_catch;
 
 public class NullPointerExceptionExample {
 

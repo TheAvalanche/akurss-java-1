@@ -1,4 +1,4 @@
-package lv.akurss.lesson4.homework_answers._1;
+package lv.akurss.lesson5.homework_answers._1;
 
 public class Utils {
 	

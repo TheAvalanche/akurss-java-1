@@ -1,19 +1,19 @@
-package lv.akurss.lesson4.homework_answers._1;
+package lv.akurss.lesson5.homework_answers._1;
 
-public class KengaragsRoutePlanner implements RoutePlanner {
+public class DefaultRoutePlanner implements RoutePlanner {
 	
 	private String from;
 	private String to;
 	private int totalPassengers = 0;
 
-	public KengaragsRoutePlanner(String from, String to) {
+	public DefaultRoutePlanner(String from, String to) {
 		this.from = from;
 		this.to = to;
 	}
 
 	@Override
 	public void addToRoute(PublicTransport publicTransport) {
-		totalPassengers = totalPassengers + (int) (publicTransport.getPassengerCount() * 1.2);
+		totalPassengers = totalPassengers + publicTransport.getPassengerCount();
 	}
 	
 	@Override

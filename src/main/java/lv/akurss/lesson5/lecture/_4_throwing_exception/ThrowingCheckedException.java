@@ -1,4 +1,4 @@
-package lv.akurss.lesson7.lecture.exception;
+package lv.akurss.lesson5.lecture._4_throwing_exception;
 
 import java.util.Scanner;
 

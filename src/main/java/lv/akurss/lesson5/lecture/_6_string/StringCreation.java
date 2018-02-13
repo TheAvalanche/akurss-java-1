@@ -1,4 +1,4 @@
-package lv.akurss.lesson7.lecture.string;
+package lv.akurss.lesson5.lecture._6_string;
 
 public class StringCreation {
 

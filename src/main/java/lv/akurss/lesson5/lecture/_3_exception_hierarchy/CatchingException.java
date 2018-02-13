@@ -1,4 +1,4 @@
-package lv.akurss.lesson7.lecture.exception;
+package lv.akurss.lesson5.lecture._3_exception_hierarchy;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

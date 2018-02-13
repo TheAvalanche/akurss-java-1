@@ -1,6 +1,6 @@
-package lv.akurss.lesson7.lecture.exception;
+package lv.akurss.lesson5.lecture._1_exception_catch;
 
-public class NullPointerExceptionCatchFinallyExample {
+public class NullPointerExceptionCatchExample {
 
 	public static void main(String[] args) {
 		String a = null;
@@ -9,8 +9,6 @@ public class NullPointerExceptionCatchFinallyExample {
 			System.out.println(a.equals(""));
 		} catch (NullPointerException npe) {
 			System.out.println("a is not defined. Try later...");
-		} finally {
-			System.out.println("cleaning resources");
 		}
 		
 		System.out.println("Finish");

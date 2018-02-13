@@ -1,4 +1,4 @@
-package lv.akurss.lesson7.lecture.exception;
+package lv.akurss.lesson5.lecture._2_exception_checked_unchecked;
 
 import java.io.File;
 import java.io.FileNotFoundException;
