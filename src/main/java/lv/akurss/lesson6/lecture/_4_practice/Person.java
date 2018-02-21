@@ -1,13 +1,24 @@
-package lv.akurss.lesson8.lecture.maps;
+package lv.akurss.lesson6.lecture._4_practice;
+
+import java.util.List;
 
 public class Person {
 	
 	private String name;
 	private String surname;
+	private List<Post> posts;
 
 	public Person(String name, String surname) {
 		this.name = name;
 		this.surname = surname;
+	}
+
+	public List<Post> getPosts() {
+		return posts;
+	}
+
+	public void setPosts(List<Post> posts) {
+		this.posts = posts;
 	}
 
 	public String getName() {

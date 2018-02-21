@@ -1,4 +1,4 @@
-package lv.akurss.lesson8.lecture.practice;
+package lv.akurss.lesson6.lecture._4_practice;
 
 import java.util.Date;
 import java.util.Set;

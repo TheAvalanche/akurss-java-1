@@ -1,4 +1,4 @@
-package lv.akurss.lesson8.lecture.maps;
+package lv.akurss.lesson6.lecture._3_maps;
 
 import java.util.HashMap;
 import java.util.Map;

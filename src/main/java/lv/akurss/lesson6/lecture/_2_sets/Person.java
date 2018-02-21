@@ -1,4 +1,4 @@
-package lv.akurss.lesson8.lecture.sets;
+package lv.akurss.lesson6.lecture._2_sets;
 
 public class Person {
 	

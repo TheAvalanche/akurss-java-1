@@ -1,6 +1,6 @@
-package lv.akurss.lesson8.lecture.sets;
+package lv.akurss.lesson6.lecture._2_sets;
 
-import lv.akurss.lesson8.lecture.lists.Person;
+import lv.akurss.lesson6.lecture._1_lists.Person;
 
 import java.util.HashSet;
 import java.util.Set;

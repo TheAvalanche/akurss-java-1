@@ -1,4 +1,4 @@
-package lv.akurss.lesson8.lecture.lists;
+package lv.akurss.lesson6.lecture._3_maps;
 
 public class Person {
 	
