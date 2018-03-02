@@ -1,8 +1,8 @@
-package lv.akurss.lesson6.homework_answers._1;
+package lv.akurss.lesson6.homework_answers._2;
 
 import java.math.BigDecimal;
 
-public class Expense {
+public class Expense implements Comparable<Expense> {
 	private BigDecimal amount;
 	private String name;
 	private Category category;
@@ -36,7 +36,12 @@ public class Expense {
 	public void setCategory(Category category) {
 		this.category = category;
 	}
-	
+
+	@Override
+	public int compareTo(Expense o) {
+		return this.getAmount().compareTo(o.getAmount());
+	}
+
 	@Override
 	public String toString() {
 		return "Expense{" +

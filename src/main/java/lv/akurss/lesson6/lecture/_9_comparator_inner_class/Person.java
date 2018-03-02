@@ -1,11 +1,11 @@
-package lv.akurss.lesson9.lecture.comparable;
+package lv.akurss.lesson6.lecture._9_comparator_inner_class;
 
-public class ComparablePerson implements Comparable<ComparablePerson> {
+public class Person {
 	
 	private String name;
 	private String surname;
 
-	public ComparablePerson(String name, String surname) {
+	public Person(String name, String surname) {
 		this.name = name;
 		this.surname = surname;
 	}
@@ -32,10 +32,5 @@ public class ComparablePerson implements Comparable<ComparablePerson> {
 				"name='" + name + '\'' +
 				", surname='" + surname + '\'' +
 				'}';
-	}
-
-	@Override
-	public int compareTo(ComparablePerson o) {
-		return this.name.compareTo(o.getName());
 	}
 }

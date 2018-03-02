@@ -1,4 +1,4 @@
-package lv.akurss.lesson9.lecture.comparator_inner_class;
+package lv.akurss.lesson6.lecture._9_comparator_inner_class;
 
 import java.util.ArrayList;
 import java.util.Collections;

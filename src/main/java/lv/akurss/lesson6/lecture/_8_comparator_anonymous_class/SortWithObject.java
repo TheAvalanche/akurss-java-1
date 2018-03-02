@@ -1,4 +1,4 @@
-package lv.akurss.lesson9.lecture.comparator_anonymous_class;
+package lv.akurss.lesson6.lecture._8_comparator_anonymous_class;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -1,4 +1,4 @@
-package lv.akurss.lesson9.lecture.comparable;
+package lv.akurss.lesson6.lecture._6_comparable;
 
 import java.util.ArrayList;
 import java.util.Collections;

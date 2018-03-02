@@ -1,4 +1,4 @@
-package lv.akurss.lesson6.homework_answers._1;
+package lv.akurss.lesson6.homework_answers._2;
 
 import java.math.BigDecimal;
 import java.util.*;
@@ -52,6 +52,7 @@ public class Main {
 	}
 	
 	private static void printHistory(List<Expense> expenses) {
+		Collections.sort(expenses);
 		for (Expense expense : expenses) {
 			System.out.println(expense);
 		}

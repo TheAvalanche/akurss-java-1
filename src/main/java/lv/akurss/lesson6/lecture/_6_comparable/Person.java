@@ -1,4 +1,4 @@
-package lv.akurss.lesson9.lecture.comparator;
+package lv.akurss.lesson6.lecture._6_comparable;
 
 public class Person {
 	
