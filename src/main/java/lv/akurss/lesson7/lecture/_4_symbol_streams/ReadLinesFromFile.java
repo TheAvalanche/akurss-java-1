@@ -1,12 +1,14 @@
-package lv.akurss.lesson10.lecture.symbol_streams;
+package lv.akurss.lesson7.lecture._4_symbol_streams;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class ReadLinesFromFile {
 
 	public static void main(String[] args) {
-
-		File input = new File("src/lv/akurss/lesson10/lecture/symbol_streams/test.txt");
+		File input = new File("src\\main\\java\\lv\\akurss\\lesson7\\lecture\\_4_symbol_streams\\test.txt");
 		
 		try (BufferedReader reader = new BufferedReader(new FileReader(input))) {
 			String line;

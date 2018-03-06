@@ -1,4 +1,4 @@
-package lv.akurss.lesson10.lecture.symbol_streams;
+package lv.akurss.lesson7.lecture._4_symbol_streams;
 
 import java.io.File;
 import java.io.FileReader;
@@ -8,8 +8,7 @@ import java.io.Reader;
 public class ReadCharsFromFile {
 
 	public static void main(String[] args) {
-
-		File input = new File("src/lv/akurss/lesson10/lecture/symbol_streams/test.txt");
+		File input = new File("src\\main\\java\\lv\\akurss\\lesson7\\lecture\\_4_symbol_streams\\test.txt");
 		
 		try (Reader reader = new FileReader(input)) {
 			int symbol;

@@ -1,4 +1,4 @@
-package lv.akurss.lesson11.lecture.homework_answers;
+package lv.akurss.lesson7.homework_answers._1;
 
 public enum Category {
 	FOOD, LIFE, PURCHASE, TRANSPORT, OTHER

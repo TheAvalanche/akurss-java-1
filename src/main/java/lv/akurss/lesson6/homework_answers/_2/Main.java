@@ -58,9 +58,4 @@ public class Main {
 		}
 	}
 
-	private static void printInfo(String key, Map<String, Expense> expenses) {
-		System.out.println(expenses.get(key));
-	}
-
-
 }

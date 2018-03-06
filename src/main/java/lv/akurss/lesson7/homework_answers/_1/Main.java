@@ -1,6 +1,7 @@
-package lv.akurss.lesson12.lecture.homework_answers;
+package lv.akurss.lesson7.homework_answers._1;
 
-import java.io.*;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.math.BigDecimal;
 import java.util.*;
 
@@ -12,9 +13,6 @@ public class Main {
 		System.out.println("Enter you expenses like amount:name:category ");
 		Scanner scanner = new Scanner(System.in);
 		List<Expense> list = new ArrayList<>();
-		Map<String, Expense> lastExpenses = new HashMap<>();
-		
-		loadExpenses(list);
 		
 		while (true) {
 			try {
@@ -28,36 +26,15 @@ public class Main {
 					printHistory(list);
 					continue;
 				}
-
-				if (s.startsWith("print")) {
-					printInfo(s.substring("print".length() + 1), lastExpenses);
-					continue;
-				}
-				
-				
+								
 				Expense expense = createExpense(s);
 				saveExpense(s);
 				list.add(expense);
-				lastExpenses.put(expense.getName(), expense);
 			} catch (Exception e) {
 				System.out.println("Wrong input. " + e.getMessage() + ". Try again.");
 			}
 		}
-	}
-	
-	private static void loadExpenses(List<Expense> list) {
-		File storage = new File("./expenses.txt");
-		if (storage.exists()) {
-			try (BufferedReader reader = new BufferedReader(new FileReader("./expenses.txt"))){
-				String line;
-				while ((line = reader.readLine()) != null) {
-					Expense expense = createExpense(line);
-					list.add(expense);
-				}
-			} catch (Exception e) {
-				System.out.println("Wrong format, try again");
-			}
-		}
+		
 	}
 	
 	private static void saveExpense(String s) {
@@ -85,15 +62,10 @@ public class Main {
 	}
 	
 	private static void printHistory(List<Expense> expenses) {
-		expenses.sort(new Expense.ExpenseComparator().reversed());
+		Collections.sort(expenses);
 		for (Expense expense : expenses) {
 			System.out.println(expense);
 		}
 	}
-
-	private static void printInfo(String key, Map<String, Expense> expenses) {
-		System.out.println(expenses.get(key));
-	}
-
 
 }

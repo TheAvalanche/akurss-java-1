@@ -1,4 +1,4 @@
-package lv.akurss.lesson10.lecture.symbol_streams;
+package lv.akurss.lesson7.lecture._4_symbol_streams;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -8,11 +8,10 @@ import java.io.Writer;
 public class WriteStringToFile {
 
 	public static void main(String[] args) {
-
-		File output = new File("src/lv/akurss/lesson10/lecture/symbol_streams/test.txt");
+		File output = new File("src\\main\\java\\lv\\akurss\\lesson7\\lecture\\_4_symbol_streams\\test.txt");
 		
-		try (Writer fileWriter = new FileWriter(output)) {
-			fileWriter.write("Hello, world!!!");
+		try (Writer writer = new FileWriter(output)) {
+			writer.write("Hello, world!!!");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
